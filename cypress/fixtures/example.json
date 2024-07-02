@@ -1,0 +1,7 @@
+{
+  "Name": "sathya",
+  "Email": "hello@cypress.io",
+  "Password": "abcd1234",
+  "Date_of_Birth":"2021-06-25",
+  "ProductsToAdd":["iphone","Nokia","Black"]
+}
