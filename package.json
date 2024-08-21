@@ -11,5 +11,8 @@
   "devDependencies": {
     "cypress": "^13.11.0",
     "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
   }
 }
