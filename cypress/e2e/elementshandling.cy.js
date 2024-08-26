@@ -9,7 +9,7 @@ cy.wait(4000)
 cy.get('#checkBoxOption2').uncheck().should('not.be.checked');
 cy.get('label input[type="checkbox"]').check(["option1","option2"]).should('be.checked');
 //static dropdown
-cy.get('select').select('option2').should('have.value','option2');
+cy.get('select').select('option3').should('have.value','option3');
 //dynamic dropdown
 cy.get('[placeholder="Type to Select Countries"]').type('in');//we can change search option in type box//wrap
 cy.get('.ui-menu-item div').each(($options)=>{// options is a name wecan enter any name

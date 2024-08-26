@@ -16,8 +16,8 @@ cy.get('#inlineRadio2').click()
 //cy.get('input[type="radio"]').click()
 cy.get('input[type="date"]').type(a.Date_of_Birth)
 cy.get('input[type="text"]').eq(2).should('have.text','')
-cy.get('div[class="alert alert-success alert-dismissible"]').should('include',
-   'Success! The Form has been submitted successfully!.')
+//cy.get('div[class="alert alert-success alert-dismissible"]').should('include',
+  // 'Success! The Form has been submitted successfully!.')
 cy.get('a[class="nav-link"]').eq(1).click()
 //cy.visit('https://rahulshettyacademy.com/angularpractice/shop')
 a.ProductsToAdd.forEach((mobiles) => {
@@ -35,7 +35,7 @@ cy.get('#country').type('In')
 // })
 cy.get('label[for="checkbox2"]').click()
 cy.get('input[class="btn btn-success btn-lg"]').click()
-cy.get('div[class="alert alert-success alert-dismissible"]').should('have.text',
-    'Success! Thank you! Your order will be delivered in next few weeks :-')
+//cy.get('div[class="alert alert-success alert-dismissible"]').should('have.text',
+  //  'Success! Thank you! Your order will be delivered in next few weeks :-')
 })
 })

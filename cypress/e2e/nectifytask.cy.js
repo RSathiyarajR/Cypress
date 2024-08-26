@@ -9,8 +9,7 @@ cy.wait(3000)
 cy.get('svg[preserveAspectRatio="xMidYMid slice"]').click()
 cy.wait(6000)
 cy.get('div[class="col-12 col-md-6"]').click()
-cy.get('select').select('Worldwide - 5.00 USD').should('have.value','Worldwide - 5.00 USD')
+cy.get('select').select('Worldwide - 5.00 USD').eq(7).should('have.value','Worldwide - 5.00 USD')
 //cy.get('select').select('option2').should('have.value','option2');
-
 })
 })

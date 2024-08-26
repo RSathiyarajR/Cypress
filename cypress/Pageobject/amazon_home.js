@@ -21,4 +21,4 @@ cy.wrap($categories).click()
 })
 }
 }
-export default HomePage;
+export default HomePage; 
