@@ -30,4 +30,18 @@ cy.wrap($products).find('button').click()
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-require('cypress-iframe');
+//require('cypress-iframe')
+
+const XLSX = require('xlsx')
+
+Cypress.Commands.add('readExcelData', (filePath, sheetName) => {
+return cy.readFile(filePath, 'binary').then((data) => {
+const workbook = XLSX.read(data, { type: 'binary'
+})
+
+const worksheet = workbook.Sheets[sheetName]
+return XLSX.utils.sheet_to_json(worksheet, {header: 1 
+    
+})
+})
+})

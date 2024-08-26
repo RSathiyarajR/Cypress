@@ -10,7 +10,14 @@
   "description": "",
   "devDependencies": {
     "cypress": "^13.11.0",
+<<<<<<< HEAD
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2"
+=======
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+>>>>>>> fb8f71dbf7337c8d127921250b02c3ef4f230b2d
   }
 }
