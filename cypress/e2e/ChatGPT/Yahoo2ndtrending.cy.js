@@ -21,7 +21,7 @@ describe('Yahoo News Trending', () => {
   
         // Find the 2nd trending news headline
         cy.get('.trending-item').eq(1).find('a').invoke('text').then(secondHeadline => {
-          cy.log(`Second Trending Headline: ${secondHeadline}`);
+          cy.log(`Second Trending Headline: ${secondHeadline}`)
           
           // Optionally, assert or perform further actions
           // Example assertion:
